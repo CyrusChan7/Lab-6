@@ -1,0 +1,76 @@
+.special_font {
+    font-family: "Montserrat", sans-serif;
+}
+
+* {
+    text-align: center;
+    font-family: "Times New Roman", sans-serif, Arial;
+}
+
+
+/* Applies to only areas with textual elements */
+body {
+    background-color: beige;
+}
+
+/* Applies to only areas without textual elements */
+html {
+    background-color: beige;
+}
+
+p {
+    color: blue;
+}
+
+.different_color {
+    background-color: lightblue;
+}
+
+/* This is necessary so the unordered list dot can also be center aligned */
+ul {
+    display: inline-block;
+    text-align: center;
+}
+
+/* Adjusts it to the proper spot on the web page */
+.navigation_bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.side_by_side {
+    display: inline;
+    padding: 10px;
+}
+
+div {
+    background-color: lightblue;
+}
+
+.left_align {
+    text-align: left;
+    color: black;
+    display: inline;
+}
+
+.same_line {
+    display: inline;
+    color: black;
+}
+
+.clear_all_attributes {
+    color: black;
+    text-align: left;
+}
+
+@media screen and (max-width: 700px) {
+    .side_by_side {
+        display: block;
+        margin: -10px;  /* Remove spacing between the li elements */
+    }
+    .same_line {
+        display: block;
+        text-align: left;
+    }
+}
